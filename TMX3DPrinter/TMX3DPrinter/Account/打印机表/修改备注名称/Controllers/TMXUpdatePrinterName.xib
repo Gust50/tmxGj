@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TMXUpdatePrinterName">
+            <connections>
+                <outlet property="describe" destination="jFV-or-ukJ" id="duI-m6-wHi"/>
+                <outlet property="describeHeight" destination="zBn-KZ-ULN" id="rt6-HM-Ta5"/>
+                <outlet property="describeTop" destination="t0t-Zr-oD4" id="b4u-dz-I3Q"/>
+                <outlet property="inputHeight" destination="z5d-x5-dr9" id="XKN-a2-b8B"/>
+                <outlet property="inputName" destination="BYT-Na-Cgp" id="GMi-PM-OeG"/>
+                <outlet property="inputTop" destination="jXI-gm-PV7" id="wTV-Ez-iHQ"/>
+                <outlet property="save" destination="zaM-eZ-sfW" id="jnq-5G-oeb"/>
+                <outlet property="saveHeight" destination="BoS-CJ-pfE" id="z7a-Iv-bbC"/>
+                <outlet property="saveTop" destination="wuR-S0-xKU" id="j2c-wt-pcB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="376" height="624"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*备注名称可以让您更快的区分打印机。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jFV-or-ukJ">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="zBn-KZ-ULN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zaM-eZ-sfW">
+                    <color key="backgroundColor" red="0.91764705879999997" green="0.37647058820000001" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="BoS-CJ-pfE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="保存">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="saveUpdatePrinterName:" destination="-1" eventType="touchUpInside" id="qCC-un-SxG"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hte-WH-tNF">
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BYT-Na-Cgp">
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="BYT-Na-Cgp" secondAttribute="bottom" id="1Lg-1C-XRa"/>
+                        <constraint firstAttribute="trailing" secondItem="BYT-Na-Cgp" secondAttribute="trailing" constant="10" id="Lmf-JJ-ZBt"/>
+                        <constraint firstItem="BYT-Na-Cgp" firstAttribute="top" secondItem="hte-WH-tNF" secondAttribute="top" id="Rr5-gh-hYn"/>
+                        <constraint firstItem="BYT-Na-Cgp" firstAttribute="leading" secondItem="hte-WH-tNF" secondAttribute="leading" constant="10" id="iQu-3W-R73"/>
+                        <constraint firstAttribute="height" constant="40" id="z5d-x5-dr9"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.89411764709999997" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="zaM-eZ-sfW" firstAttribute="trailing" secondItem="jFV-or-ukJ" secondAttribute="trailing" id="2ET-7E-1b8"/>
+                <constraint firstItem="hte-WH-tNF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5mC-ef-SGa"/>
+                <constraint firstAttribute="trailing" secondItem="jFV-or-ukJ" secondAttribute="trailing" constant="10" id="SPt-dD-P4K"/>
+                <constraint firstItem="zaM-eZ-sfW" firstAttribute="leading" secondItem="jFV-or-ukJ" secondAttribute="leading" id="YgT-Qv-XMw"/>
+                <constraint firstItem="hte-WH-tNF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="79" id="jXI-gm-PV7"/>
+                <constraint firstItem="jFV-or-ukJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="n9l-SP-MY2"/>
+                <constraint firstItem="jFV-or-ukJ" firstAttribute="top" secondItem="hte-WH-tNF" secondAttribute="bottom" constant="15" id="t0t-Zr-oD4"/>
+                <constraint firstItem="zaM-eZ-sfW" firstAttribute="top" secondItem="jFV-or-ukJ" secondAttribute="bottom" constant="50" id="wuR-S0-xKU"/>
+                <constraint firstAttribute="trailing" secondItem="hte-WH-tNF" secondAttribute="trailing" id="yHi-nw-IYb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-640" y="-64"/>
+        </view>
+    </objects>
+</document>

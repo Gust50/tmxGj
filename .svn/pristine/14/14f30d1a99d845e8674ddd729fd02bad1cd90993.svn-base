@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TMXPrinterPromptView">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="663"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ekV-lG-O4c">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="打印完成" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EyV-7I-Lff">
+                            <color key="backgroundColor" red="0.91764705882352937" green="0.37647058823529411" blue="0.0039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="gfa-5P-gzR"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="恭喜您，成功打印此模型，请对此次打印作出评价！" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JlU-6l-n8e">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="80" id="jSR-su-U4B"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4rt-x1-YNO">
+                            <color key="backgroundColor" red="0.91764705879999997" green="0.37647058820000001" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="AeB-Zl-Ec3"/>
+                                <constraint firstAttribute="width" constant="100" id="uwS-Fv-hru"/>
+                            </constraints>
+                            <state key="normal" title="去评论">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="gocomment:" destination="iN0-l3-epB" eventType="touchUpInside" id="KYl-Td-kKb"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HistoryDelete" translatesAutoresizingMaskIntoConstraints="NO" id="UTy-sG-Ghb">
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="OxI-a6-GGB"/>
+                                <constraint firstAttribute="height" constant="40" id="yvE-pa-JeN"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="EyV-7I-Lff" firstAttribute="top" secondItem="ekV-lG-O4c" secondAttribute="top" id="7UR-49-rmk"/>
+                        <constraint firstItem="JlU-6l-n8e" firstAttribute="top" secondItem="EyV-7I-Lff" secondAttribute="bottom" constant="10" id="A3d-VQ-8sL"/>
+                        <constraint firstItem="4rt-x1-YNO" firstAttribute="centerX" secondItem="ekV-lG-O4c" secondAttribute="centerX" id="E8u-5K-j8l"/>
+                        <constraint firstAttribute="trailing" secondItem="JlU-6l-n8e" secondAttribute="trailing" constant="20" id="EKp-qb-Ui2"/>
+                        <constraint firstItem="4rt-x1-YNO" firstAttribute="top" secondItem="JlU-6l-n8e" secondAttribute="bottom" constant="10" id="IL0-aa-w7v"/>
+                        <constraint firstAttribute="trailing" secondItem="EyV-7I-Lff" secondAttribute="trailing" id="RQr-jb-aUk"/>
+                        <constraint firstAttribute="trailing" secondItem="UTy-sG-Ghb" secondAttribute="trailing" constant="-20" id="nwZ-qI-63y"/>
+                        <constraint firstAttribute="height" constant="230" id="pyt-Mf-OnE"/>
+                        <constraint firstItem="EyV-7I-Lff" firstAttribute="leading" secondItem="ekV-lG-O4c" secondAttribute="leading" id="rM3-eo-zNc"/>
+                        <constraint firstItem="UTy-sG-Ghb" firstAttribute="top" secondItem="ekV-lG-O4c" secondAttribute="top" constant="-20" id="ull-lC-TSk"/>
+                        <constraint firstItem="JlU-6l-n8e" firstAttribute="leading" secondItem="ekV-lG-O4c" secondAttribute="leading" constant="20" id="yFt-1F-dI3"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="ekV-lG-O4c" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Tl5-75-9ez"/>
+                <constraint firstAttribute="trailing" secondItem="ekV-lG-O4c" secondAttribute="trailing" constant="30" id="eac-hm-v7V"/>
+                <constraint firstItem="ekV-lG-O4c" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="fh3-bE-7nn"/>
+                <constraint firstItem="ekV-lG-O4c" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="zWt-Cs-ji4"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backView" destination="ekV-lG-O4c" id="V1v-Nm-Jm7"/>
+                <outlet property="backViewHeight" destination="pyt-Mf-OnE" id="bIs-oT-RmG"/>
+                <outlet property="backViewLeft" destination="zWt-Cs-ji4" id="UrB-BJ-LJe"/>
+                <outlet property="backViewRight" destination="eac-hm-v7V" id="KLH-VB-4HS"/>
+                <outlet property="cancel" destination="UTy-sG-Ghb" id="Wv4-z3-L8c"/>
+                <outlet property="cancelHeight" destination="yvE-pa-JeN" id="r4w-n4-i2r"/>
+                <outlet property="cancelRight" destination="nwZ-qI-63y" id="7Pk-FG-YD7"/>
+                <outlet property="cancelTop" destination="ull-lC-TSk" id="VpS-Ww-jZb"/>
+                <outlet property="cancelWidth" destination="OxI-a6-GGB" id="vNx-aE-Ym6"/>
+                <outlet property="content" destination="JlU-6l-n8e" id="nOt-cp-CL3"/>
+                <outlet property="contentHeight" destination="jSR-su-U4B" id="dmO-8K-WVQ"/>
+                <outlet property="contentRight" destination="EKp-qb-Ui2" id="ptL-Zf-Qsg"/>
+                <outlet property="contetLeft" destination="yFt-1F-dI3" id="agP-cC-9bZ"/>
+                <outlet property="goRemark" destination="4rt-x1-YNO" id="3hI-Qt-L64"/>
+                <outlet property="remarkHeight" destination="AeB-Zl-Ec3" id="oz3-GM-V1v"/>
+                <outlet property="remarkWidth" destination="uwS-Fv-hru" id="fp9-dg-9jn"/>
+                <outlet property="title" destination="EyV-7I-Lff" id="zao-IK-Vur"/>
+                <outlet property="titleHeight" destination="gfa-5P-gzR" id="y6X-rd-Gln"/>
+            </connections>
+            <point key="canvasLocation" x="0.0" y="24"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="HistoryDelete" width="25" height="25"/>
+    </resources>
+</document>

@@ -1,0 +1,83 @@
+//
+//  PrefixHeader.pch
+//  TMX3DPrinter
+//
+//  Created by kobe on 16/8/25.
+//  Copyright © 2016年 kobe. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#import "MMDrawerController.h"
+#import "KBNavigationVC.h"
+#import "TMXBaseVC.h"
+#import "Masonry.h"
+#import "UIImageView+WebCache.h"
+#import "BaseModel.h"
+#import "Masonry.h"
+#import "UINavigationBar+Awesome.h"
+#import "NSString+KBExtension.h"
+#import "KBHttpTool.h"
+#import "UIBarButtonItem+KBExtension.h"
+#import "UIView+Extension.h"
+#import "KBTextView.h"
+#import "MBProgressHUD+KBExtension.h"
+#import "KBRegexp.h"
+#import "KBFetchSystemInfo.h"
+#import "KBGCDTimerManager.h"
+#import "HeaderUrl.h"
+#import "FetchAppPublicKeyModel.h"
+#import "MJExtension.h"
+#import "NSObject+KBExtension.h"
+#import "KBRSA.h"
+#import "KBDateFormatter.h"
+#import "NSDate+KBExtension.h"
+#import "MJRefresh.h"
+#import "KBTimer.h"
+#import "NSArray+KBExtension.h"
+#import "AppDelegate.h"
+#import "NSBundle+Extension.h"
+#import "KBTextField.h"
+
+#define ShareApp ((AppDelegate *)[[UIApplication sharedApplication] delegate])
+//16进制颜色
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+#define SCREENWIDTH   [UIScreen mainScreen].bounds.size.width
+#define SCREENHEIGHT  [UIScreen mainScreen].bounds.size.height
+//等比例缩放
+#define AppScale [UIScreen mainScreen].bounds.size.width/320
+
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+
+//RGB颜色
+#define RGBColor(r,g,b)  [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1.0]
+#define RGBAColor(r,g,b,a)  [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+
+//背景颜色
+#define backGroundColor [UIColor colorWithRed:246/255.0 green:245/255.0 blue:246/255.0 alpha:1.0]
+#define systemColor [UIColor colorWithRed:237/255.0 green:109/255.0 blue:0 alpha:1.0]
+
+#define ServerError [NSString stringWithFormat:@"Request Time Out"]    //!<服务器报错信息
+
+//#define USALanguage [[NSBundle getCurrentLanguage] hasPrefix:@"en"]
+////#if USALanguage
+//
+//#endif
+
+
+//弱引用
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+
+#ifdef DEBUG
+#define LRString [NSString stringWithFormat:@"%s", __FILE__].lastPathComponent
+#define LRLog(...) printf("%s: %s 第%d行: %s\n\n",[[NSString lr_stringDate] UTF8String], [LRString UTF8String] ,__LINE__, [[NSString stringWithFormat:__VA_ARGS__] UTF8String]);
+#else
+#define LRLog(...)
+#endif
+
+#endif /* PrefixHeader_pch */

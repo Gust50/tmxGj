@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TMXSelectWorkWiFi">
+            <connections>
+                <outlet property="arrow" destination="oql-Sw-1Fz" id="8sS-JE-JGC"/>
+                <outlet property="backView" destination="BJq-Du-zsM" id="Zlf-j3-cFC"/>
+                <outlet property="confirm" destination="Vau-gu-Dkc" id="82X-Vl-PQr"/>
+                <outlet property="inputAccount" destination="0lK-0j-U8y" id="4xP-PM-1po"/>
+                <outlet property="inputPassword" destination="7Au-uQ-uUI" id="gaP-JX-eJ7"/>
+                <outlet property="remember" destination="ndx-ko-kqm" id="6nc-xa-1SK"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="391" height="640"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SelectWiFiView" translatesAutoresizingMaskIntoConstraints="NO" id="LDa-KW-o6e">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="5lz-ba-Vkm"/>
+                        <constraint firstAttribute="width" constant="120" id="YFM-Ae-Plz"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BJq-Du-zsM">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PsB-Tf-sOn">
+                            <color key="backgroundColor" red="0.81568627449999997" green="0.81568627449999997" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="BVS-eN-egk"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入Wi-Fi账号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0lK-0j-U8y">
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bY6-we-wCA">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="S0m-Vm-m51"/>
+                                <constraint firstAttribute="height" constant="21" id="nK3-dJ-DfH"/>
+                            </constraints>
+                            <state key="normal" image="NoDisplayPassword"/>
+                            <connections>
+                                <action selector="isSeePassword:" destination="-1" eventType="touchUpInside" id="ptm-Qf-5gL"/>
+                            </connections>
+                        </button>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入Wi-Fi密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Au-uQ-uUI">
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oql-Sw-1Fz">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="M7n-ox-lHa"/>
+                            </constraints>
+                            <state key="normal" image="BottomArrowIcon"/>
+                            <connections>
+                                <action selector="arrowBtn:" destination="-1" eventType="touchUpInside" id="2NE-Br-X3N"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="PsB-Tf-sOn" firstAttribute="centerX" secondItem="BJq-Du-zsM" secondAttribute="centerX" id="1T8-5f-bPq"/>
+                        <constraint firstItem="0lK-0j-U8y" firstAttribute="leading" secondItem="BJq-Du-zsM" secondAttribute="leading" constant="10" id="4Mr-Su-kHr"/>
+                        <constraint firstAttribute="height" constant="101" id="6Z5-4m-yeg"/>
+                        <constraint firstItem="7Au-uQ-uUI" firstAttribute="top" secondItem="PsB-Tf-sOn" secondAttribute="bottom" constant="5" id="6mt-8t-fpi"/>
+                        <constraint firstAttribute="trailing" secondItem="oql-Sw-1Fz" secondAttribute="trailing" constant="5" id="FAR-l0-oqf"/>
+                        <constraint firstItem="oql-Sw-1Fz" firstAttribute="top" secondItem="BJq-Du-zsM" secondAttribute="top" constant="10" id="IJB-He-71Q"/>
+                        <constraint firstItem="bY6-we-wCA" firstAttribute="top" secondItem="PsB-Tf-sOn" secondAttribute="bottom" constant="15" id="LQs-AR-9ln"/>
+                        <constraint firstAttribute="trailing" secondItem="0lK-0j-U8y" secondAttribute="trailing" constant="45" id="MK0-nb-esh"/>
+                        <constraint firstItem="7Au-uQ-uUI" firstAttribute="leading" secondItem="BJq-Du-zsM" secondAttribute="leading" constant="10" id="Mfg-Kh-crq"/>
+                        <constraint firstItem="bY6-we-wCA" firstAttribute="leading" secondItem="7Au-uQ-uUI" secondAttribute="trailing" id="Msh-He-Wug"/>
+                        <constraint firstItem="PsB-Tf-sOn" firstAttribute="leading" secondItem="BJq-Du-zsM" secondAttribute="leading" constant="5" id="PqJ-mO-Owl"/>
+                        <constraint firstAttribute="bottom" secondItem="7Au-uQ-uUI" secondAttribute="bottom" constant="5" id="PuG-Qf-DgA"/>
+                        <constraint firstItem="PsB-Tf-sOn" firstAttribute="top" secondItem="0lK-0j-U8y" secondAttribute="bottom" constant="5" id="SRj-Ol-ZCY"/>
+                        <constraint firstItem="PsB-Tf-sOn" firstAttribute="centerY" secondItem="BJq-Du-zsM" secondAttribute="centerY" id="TR8-j2-ul8"/>
+                        <constraint firstItem="PsB-Tf-sOn" firstAttribute="top" secondItem="oql-Sw-1Fz" secondAttribute="bottom" constant="10" id="eYB-4W-w9g"/>
+                        <constraint firstItem="0lK-0j-U8y" firstAttribute="top" secondItem="BJq-Du-zsM" secondAttribute="top" constant="5" id="fMx-Ok-hKg"/>
+                        <constraint firstAttribute="trailing" secondItem="bY6-we-wCA" secondAttribute="trailing" constant="15" id="hlE-hQ-5q7"/>
+                        <constraint firstAttribute="trailing" secondItem="PsB-Tf-sOn" secondAttribute="trailing" constant="5" id="qWE-uv-odo"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vau-gu-Dkc">
+                    <color key="backgroundColor" red="0.90980392160000001" green="0.3803921569" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Pv1-Jb-m16"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="确认">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="confirmWiFi:" destination="-1" eventType="touchUpInside" id="B5m-Rm-7hz"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndx-ko-kqm">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="QVY-CC-T6X"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="记住wi-fi密码">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="rememberBtn:" destination="-1" eventType="touchUpInside" id="Efp-Mv-wYU"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.96470588239999999" green="0.96078431369999995" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ndx-ko-kqm" secondAttribute="trailing" id="2Tm-Ox-3Ic"/>
+                <constraint firstItem="LDa-KW-o6e" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="BZL-9S-tb3"/>
+                <constraint firstItem="Vau-gu-Dkc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="LeK-D0-akr"/>
+                <constraint firstItem="BJq-Du-zsM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="Mu6-LZ-Fjs"/>
+                <constraint firstItem="ndx-ko-kqm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Px1-cp-gve"/>
+                <constraint firstAttribute="trailing" secondItem="BJq-Du-zsM" secondAttribute="trailing" constant="15" id="a1I-cI-rGs"/>
+                <constraint firstItem="Vau-gu-Dkc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="aGV-BF-C2b"/>
+                <constraint firstAttribute="trailing" secondItem="Vau-gu-Dkc" secondAttribute="trailing" constant="10" id="aJN-g7-ILE"/>
+                <constraint firstItem="LDa-KW-o6e" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="94" id="cCg-6G-XQh"/>
+                <constraint firstItem="ndx-ko-kqm" firstAttribute="top" secondItem="BJq-Du-zsM" secondAttribute="bottom" constant="10" id="gMh-a8-g7b"/>
+                <constraint firstItem="ndx-ko-kqm" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="htZ-18-Ve4"/>
+                <constraint firstItem="BJq-Du-zsM" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="i5c-VB-o93"/>
+                <constraint firstItem="Vau-gu-Dkc" firstAttribute="top" secondItem="ndx-ko-kqm" secondAttribute="bottom" constant="20" id="j3e-jp-Z9g"/>
+                <constraint firstItem="BJq-Du-zsM" firstAttribute="top" secondItem="LDa-KW-o6e" secondAttribute="bottom" constant="30" id="qcf-A9-4ld"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-88" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="BottomArrowIcon" width="13" height="7"/>
+        <image name="NoDisplayPassword" width="19" height="8"/>
+        <image name="SelectWiFiView" width="128" height="96"/>
+    </resources>
+</document>

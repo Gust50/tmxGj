@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TMXPersonMyNickNameVC">
+            <connections>
+                <outlet property="confirmModify" destination="tcD-TW-vYh" id="qrO-AN-wJZ"/>
+                <outlet property="inputNickName" destination="cil-4b-aKA" id="yrJ-oh-K7T"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cil-4b-aKA">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="TMJ-Bb-xDy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tcD-TW-vYh">
+                    <color key="backgroundColor" red="0.90980392160000001" green="0.3803921569" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="8qU-n0-qvk"/>
+                    </constraints>
+                    <state key="normal" title="确认修改">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="setConfirmModifyEven:" destination="-1" eventType="touchUpInside" id="HU8-sO-8WW"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="cil-4b-aKA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="CZb-Bp-pBm"/>
+                <constraint firstItem="cil-4b-aKA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="84" id="PJl-DW-J7T"/>
+                <constraint firstAttribute="trailing" secondItem="cil-4b-aKA" secondAttribute="trailing" id="XJh-Lq-Jmf"/>
+                <constraint firstItem="tcD-TW-vYh" firstAttribute="top" secondItem="cil-4b-aKA" secondAttribute="bottom" constant="41" id="hew-OZ-3gh"/>
+                <constraint firstAttribute="trailing" secondItem="tcD-TW-vYh" secondAttribute="trailing" constant="10" id="izg-h8-a6d"/>
+                <constraint firstItem="tcD-TW-vYh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="lr6-uc-pxx"/>
+            </constraints>
+            <point key="canvasLocation" x="166" y="213"/>
+        </view>
+    </objects>
+</document>

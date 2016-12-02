@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "b6418900-d3fd-304f-836a-e2b1ebd5d604++9983",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "b6418900-d3fd-304f-836a-e2b1ebd5d604++9983" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "b6418900-d3fd-304f-836a-e2b1ebd5d604++9983" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "1C07BB84-9280-4FBC-8FD4-008A0949180D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "b6418900-d3fd-304f-836a-e2b1ebd5d604++9983" : "%E5%A4%A9%E9%A9%AC%E6%98%9F%E4%BA%8C%E6%9C%9F\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "TMX3DPrinter",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "TMX3DPrinter\/TMX3DPrinter.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/120.24.96.42\/svn\/DreamSailSoft",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "b6418900-d3fd-304f-836a-e2b1ebd5d604++9983"
+    }
+  ]
+}

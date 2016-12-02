@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TMXProfileEditVC">
+            <connections>
+                <outlet property="backHeight" destination="d1Q-gh-sk1" id="MhC-GM-q5P"/>
+                <outlet property="backTop" destination="I1b-wi-fqd" id="7yk-co-kvJ"/>
+                <outlet property="delete" destination="DpQ-rV-Lz1" id="dt7-Iu-30h"/>
+                <outlet property="deleteHeight" destination="esc-8z-Jko" id="BhZ-Sn-BTV"/>
+                <outlet property="deleteTop" destination="vnQ-pd-QIb" id="iZ2-T5-YRI"/>
+                <outlet property="describe" destination="VeZ-Wd-x6m" id="yqu-DL-Rtj"/>
+                <outlet property="describeHeight" destination="cnB-kj-2kk" id="RNB-C4-krw"/>
+                <outlet property="describeLeft" destination="9AM-cN-nF7" id="bHz-ar-WAA"/>
+                <outlet property="describeRight" destination="u3i-p7-Imw" id="Fk6-oh-YtS"/>
+                <outlet property="modelHeight" destination="Z5m-WM-OKw" id="Tn1-or-cXF"/>
+                <outlet property="modelLabel" destination="rTI-4g-6oH" id="Tqz-A0-TdS"/>
+                <outlet property="modelLeft" destination="DHd-j5-DAv" id="oWY-WI-bsG"/>
+                <outlet property="modelRight" destination="B7Y-H1-UqF" id="64X-jV-UwR"/>
+                <outlet property="modelStatus" destination="SWf-ko-12W" id="z3e-g7-9Ym"/>
+                <outlet property="modelWidth" destination="g0d-yu-Vft" id="Ukn-g6-mqZ"/>
+                <outlet property="switchHeight" destination="vGW-2b-pLI" id="7DX-yI-KrX"/>
+                <outlet property="switchWidth" destination="ehI-7p-JF1" id="o8E-98-DJ3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="411" height="644"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xN2-Ab-t8R">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="模型公开" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rTI-4g-6oH">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="Z5m-WM-OKw"/>
+                                <constraint firstAttribute="width" constant="150" id="g0d-yu-Vft"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SWf-ko-12W">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="49" id="ehI-7p-JF1"/>
+                                <constraint firstAttribute="height" constant="31" id="vGW-2b-pLI"/>
+                            </constraints>
+                            <connections>
+                                <action selector="changeState:" destination="-1" eventType="valueChanged" id="jco-1y-26p"/>
+                            </connections>
+                        </switch>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="rTI-4g-6oH" firstAttribute="centerY" secondItem="xN2-Ab-t8R" secondAttribute="centerY" id="4tK-DP-dqk"/>
+                        <constraint firstAttribute="trailing" secondItem="SWf-ko-12W" secondAttribute="trailing" constant="10" id="B7Y-H1-UqF"/>
+                        <constraint firstItem="rTI-4g-6oH" firstAttribute="leading" secondItem="xN2-Ab-t8R" secondAttribute="leading" constant="10" id="DHd-j5-DAv"/>
+                        <constraint firstItem="SWf-ko-12W" firstAttribute="centerY" secondItem="xN2-Ab-t8R" secondAttribute="centerY" id="MSl-rv-Oqk"/>
+                        <constraint firstAttribute="height" constant="50" id="d1Q-gh-sk1"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*模型公开后，所有用户均可查看此模型，进行打印、评论、反馈、分享等操作，关闭后将不再显示。" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VeZ-Wd-x6m">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="cnB-kj-2kk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DpQ-rV-Lz1">
+                    <color key="backgroundColor" red="0.91764705879999997" green="0.37647058820000001" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="esc-8z-Jko"/>
+                    </constraints>
+                    <state key="normal" title="删除">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="deleteModel:" destination="-1" eventType="touchUpInside" id="T8W-bD-DvL"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.89411764709999997" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="VeZ-Wd-x6m" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="9AM-cN-nF7"/>
+                <constraint firstItem="DpQ-rV-Lz1" firstAttribute="trailing" secondItem="VeZ-Wd-x6m" secondAttribute="trailing" id="G0Z-ec-8Yi"/>
+                <constraint firstItem="xN2-Ab-t8R" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="74" id="I1b-wi-fqd"/>
+                <constraint firstItem="DpQ-rV-Lz1" firstAttribute="leading" secondItem="VeZ-Wd-x6m" secondAttribute="leading" id="IUH-IM-4Az"/>
+                <constraint firstItem="xN2-Ab-t8R" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Lvg-29-vwS"/>
+                <constraint firstAttribute="trailing" secondItem="xN2-Ab-t8R" secondAttribute="trailing" id="gYS-lD-pu5"/>
+                <constraint firstItem="VeZ-Wd-x6m" firstAttribute="top" secondItem="xN2-Ab-t8R" secondAttribute="bottom" constant="10" id="nyn-Le-PyW"/>
+                <constraint firstAttribute="trailing" secondItem="VeZ-Wd-x6m" secondAttribute="trailing" constant="15" id="u3i-p7-Imw"/>
+                <constraint firstItem="DpQ-rV-Lz1" firstAttribute="top" secondItem="VeZ-Wd-x6m" secondAttribute="bottom" constant="60" id="vnQ-pd-QIb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="7.5" y="180"/>
+        </view>
+    </objects>
+</document>
